@@ -9,5 +9,17 @@
 
 <h2>Display your first ship here</h2>
 
+<h1>Ship One</h1>
+<% @ships.each.with_index do |ship, index| %>
+<div class="ship">
+  <% if index == 0 %>
+  <p>Name: <%= ship.name %></p><br>
+  <p>Type: <%= ship.type %></p><br>
+  <p>Booty: <%= ship.booty %></p><br>
+  <% end %>
+  <% end %>
+  
+</div><br>
 
 <h2>Display your second ship here</h2>
+
